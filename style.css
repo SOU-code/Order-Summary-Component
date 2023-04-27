@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+    background-color: hsl(225, 100%, 94%);
+}
+/* --------------Utility CSS------------ */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* ---------------Desktop Page-------------- */
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    border-radius: 2rem;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.6rem;
+    width: 40rem;
+    box-shadow: 0 2rem 3rem -1rem hsla(223, 47%, 23%, 0.445);
+}
+.container .main-img img{
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    width: 100%;
+}
+.text-content{
+    margin: 3rem;
+}
+.text-content .heading{
+    color:hsl(223, 47%, 23%);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+.text-content .text{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 2rem;
+}
+.price{
+    display: flex;
+    padding: 2rem;
+    background: hsl(225, 100%, 98%);
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+.price .price-content{
+    margin: 0 2rem;
+    flex-grow: 2;
+}
+.price-content .price-type{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.price-content .price-amount{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.price-change{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price-change a{
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    padding-top: 1rem;
+}
+.payment{
+    width: 100%;
+    background: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.281);
+    margin-bottom: 2rem;
+}
+.cancel{
+    text-align: center;
+    color:hsl(224, 23%, 55%);
+    font-family: 700;
+}
+.price-change a:hover{
+    color: rgb(154, 89, 244);
+    text-decoration: none;
+}
+.payment:hover{
+    background: rgb(154, 89, 244);
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+/* -----------Mobile View---------- */
+@media(max-width:450px) and (min-width:350px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:350px){
+    html{
+        font-size: 40%;
+    }
+}
